@@ -14,8 +14,7 @@ A comprehensive Node.js + Express backend API for a mini course enrollment syste
 
 ## 📋 System Requirements
 
-- Node.js (v22 or higher)
-- npm 
+- Node.js (v22 or higher) 
 
 ## 🛠️ Installation & Setup
 
@@ -44,18 +43,6 @@ NODE_ENV=development
 ```sql
 CREATE DATABASE course_enrollment_db;
 ```
-
-#### Option B: Using SQL Schema
-1. Create the database:
-```sql
-CREATE DATABASE course_enrollment_db;
-```
-
-2. Run the SQL schema:
-```bash
-psql -U username -d course_enrollment_db -f src/models/schema.sql
-```
-
 ### 4. Database Migration Setup
 
 #### Run Migrations
@@ -63,12 +50,6 @@ psql -U username -d course_enrollment_db -f src/models/schema.sql
 # Run all pending migrations
 npm run migration:run
 
-# Check migration status
-npm run migration:show
-
-# Revert last migration (if needed)
-npm run migration:revert
-```
 
 ### 5. Start the Server
 

@@ -8,10 +8,8 @@
     "dev": "nodemon src/index.js --watch src",
     "test": "jest --runInBand",
     "migration:run": "node ./node_modules/typeorm/cli.js migration:run -d src/data-source.js",
-    "migration:revert": "node ./node_modules/typeorm/cli.js migration:revert -d src/data-source.js",
     "migration:show": "node ./node_modules/typeorm/cli.js migration:show -d src/data-source.js",
     "seed": "node scripts/seedData.js",
-    "seed:quick": "node scripts/quickSeed.js",
     "test:api": "node scripts/testAPI.js"
   },
   "keywords": [],
