@@ -50,6 +50,9 @@ CREATE DATABASE course_enrollment_db;
 # Run all pending migrations
 npm run migration:run
 
+# To add some record which help to test 
+npm run seed 
+
 
 ### 5. Start the Server
 
