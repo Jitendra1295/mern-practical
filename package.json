@@ -1,0 +1,35 @@
+{
+  "name": "mern-practical-backend",
+  "version": "1.0.0",
+  "description": "Mini course enrollment backend for MERN practical (TypeORM)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js --watch src",
+    "test": "jest --runInBand",
+    "migration:run": "node ./node_modules/typeorm/cli.js migration:run -d src/data-source.js",
+    "migration:revert": "node ./node_modules/typeorm/cli.js migration:revert -d src/data-source.js",
+    "migration:show": "node ./node_modules/typeorm/cli.js migration:show -d src/data-source.js",
+    "seed": "node scripts/seedData.js",
+    "seed:quick": "node scripts/quickSeed.js",
+    "test:api": "node scripts/testAPI.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "pg": "^8.10.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0"
+  }
+}
