@@ -43,6 +43,10 @@ NODE_ENV=development
 ```sql
 CREATE DATABASE course_enrollment_db;
 ```
+```update env with real username and password with DB name if u name something else 
+DATABASE_URL=postgresql://username:password@localhost:5432/course_enrollment_db
+```
+
 ### 4. Database Migration Setup
 
 #### Run Migrations
