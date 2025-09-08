@@ -43,7 +43,8 @@ NODE_ENV=development
 ```sql
 CREATE DATABASE course_enrollment_db;
 ```
-```update env with real username and password with DB name if u name something else 
+2. update env with real username and password with DB name if u name something else :
+```update env 
 DATABASE_URL=postgresql://username:password@localhost:5432/course_enrollment_db
 ```
 
